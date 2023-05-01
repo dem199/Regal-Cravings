@@ -1,4 +1,4 @@
-import { menuArray } from '/localData.js'
+import { menuArray } from '/orderData.js'
 
 const closeButton = document.querySelector('.close-nav');
 const openButton = document.querySelector('.open-nav');
