@@ -14,8 +14,12 @@
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap"
         rel="stylesheet"
       />
+      <script
+        src="https://kit.fontawesome.com/eac77771df.js"
+        crossorigin="anonymous"
+      ></script>
       <link href="css/styles.css" rel="stylesheet" />
-      <title>Lolo's Empire promo</title>
+      <title>Regal Cravings</title>
     </head>
     <body>
       <header>
@@ -32,18 +36,20 @@
               &times;
             </button>
 
-            <ul class="nav-list">
+            <ol class="nav-list">
               <li>
                 <a class="current-page" href="index.html">Home</a>
               </li>
               <li><a href="about-us.html" class="nav-link">About Us</a></li>
 
-              <li><a href="local.html" class="nav-link">Local</a></li>
-            </ul>
+              <li><a href="order.html" class="nav-link">Order</a></li>
+            </ol>
           </nav>
         </div>
         <!-- / .container -->
       </header>
+
+      <!-- / .about-us -->
       <section class="container-two">
         <div class="intro">
           <h1>
@@ -54,49 +60,81 @@
           <p class="top-text">Sumptuous delicacy</p>
         </div>
 
-        <div class="main-content">
-          <h2>Regal Cravings December promo</h2>
-          <p>Register Today</p>
-          <p>
-            You stand a chance to be win our December promo if you order foods
-            above #30,000 in December, you can input your details in the form
-            below if you fall in his category.
-          </p>
-
-          <form
-            class="details-collector"
-            id="details-collector"
-            action="#"
-            method="POST"
-          >
+        <div id="wrapper">
+          <header>
+            <div id="page-banner">
+              <h1 class="title">Regal Cravings</h1>
+              <p>Find the world's best recipes</p>
+              <form id="search-recipes">
+                <input type="text" placeholder="Search recipe..." />
+              </form>
+            </div>
+          </header>
+          <div id="recipe-list">
+            <h2 class="title">Favourites</h2>
+            <ul>
+              <li>
+                <span class="name">Beef</span>
+                <span class="delete">delete</span>
+              </li>
+              <li>
+                <span class="name">Chicken</span>
+                <span class="delete">delete</span>
+              </li>
+              <li>
+                <span class="name">Pasta</span>
+                <span class="delete">delete</span>
+              </li>
+              <li>
+                <span class="name">Seafood</span>
+                <span class="delete">delete</span>
+              </li>
+            </ul>
+          </div>
+          <form id="add-recipe">
+            <input type="checkbox" id="hide" />
+            <label for="hide">Hide all recipes</label>
             <input
-              name="fullName"
+              class="input-recipe"
               type="text"
-              required
-              placeholder="fullname"
+              placeholder="Add a recipe..."
             />
-
-            <input type="email" name="email" required placeholder="email" />
-            <input
-              type="password"
-              name="password"
-              required
-              placeholder="password"
-            />
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <button>Add</button>
           </form>
-
-          <p class="fine-print">Your information is secured with us</p>
+          <div id="tabbed-content">
+            <ul class="tabs">
+              <li data-target="#about" class="active">About</li>
+              <li data-target="#contact">Contact</li>
+            </ul>
+            <div class="panel active" id="about">
+              <p>About Us</p>
+              <p>
+                Indulge in a culinary journey with Regal cravings, where
+                flavours come alive and nourishment is elivated to an art form.
+                As a dedicated chef, Regal pours heart and soul into every dish,
+                ensuring that each bite is a celebration of taste and
+                well-being.
+              </p>
+            </div>
+            <div class="panel" id="contact">
+              <p>Our address below</p>
+              <p>
+                Kofo estate, Fagba, Lagos State. You can reach us via
+                <a href="http://wa.me/+2348163449140">Whatsapp </a>
+                and
+                <a href="https://www.instagram.com/regalcravings">instagram </a>
+                for more enquiries
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-
-      <!-- / .about-us -->
 
       <!-- / .order -->
 
       <footer>
         <p><strong>Be here and be happy</strong></p>
-        <p>Copyright 2022 | Developed by Opeyemi Olatunbosun</p>
+        <p>Copyright 2023 | Developed by Opeyemi Olatunbosun</p>
       </footer>
       <div class="modal" id="modal">
         <div class="close-modal-btn-container">

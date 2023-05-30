@@ -24,6 +24,7 @@ header {
 
 .container-two{
     text-align: center;
+  
 }
 .container-flex {
     display: flex;
@@ -57,12 +58,12 @@ nav {
     transform: translateX(0);
     transition: transform 250ms;
 }
- ul {
+ ol {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    border: 2px solid magenta;
+    
     height: 100%;
     align-items: center;
     justify-content: space-around;
@@ -149,10 +150,12 @@ h2 {
 }
 
 h2 + p {
-    font-weight: 300;
-    color: #F18119;
+    
     margin-top: 0;
     
+}
+.modal-text{
+    color: #F18119;
 }
 
 .top-text {
@@ -172,6 +175,169 @@ h2 + p {
     letter-spacing: 1px;
 }
 
+/*  ==========
+    Wrapper
+    ========== */
+
+
+    label {
+        color: #F18119;
+      }
+      
+      #wrapper {
+       
+        max-width: 960px;
+        
+        border-radius: 6px;
+        box-shadow: 0px 1px 6px #F18119;
+        box-sizing: border-box;
+        padding: 0 0 20px;
+        overflow: hidden;
+        border: 1px solid lightgray;
+        background: #c8e3e74b
+      
+      }
+      
+      #page-banner {
+        background: #F18119;
+        padding: 10px 0;
+      }
+      
+      #page-banner h1,
+      #page-banner p {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+      }
+      
+      #page-banner input {
+        width: 90%;
+        max-width: 300px;
+        margin: 20px auto;
+        display: block;
+        padding: 8px;
+        border: 1px solid gold;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #444;
+      }
+      
+      #recipe-list,
+      #recipe-book,
+      #tabbed-content {
+        margin: 30px;
+      }
+      
+      #recipe-list ul,
+      #tabbed-content ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      #recipe-list li {
+        padding: 20px;
+        border-left: 5px solid gold;
+        margin: 20px 10px;
+      }
+      
+      #recipe-list li:hover {
+        border-color: gold;
+      }
+      
+      .delete {
+        float: right;
+        
+        background-color: #04020ef3;
+        padding: 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+      }
+      
+      .delete:hover {
+        background: #F18119;
+      }
+      
+      #add-recipe {
+        width: 400px;
+        margin: 0 auto;
+      }
+      #contact p a{
+        color: white;
+        text-decoration: none;
+        
+      }
+
+      #contact p a:hover{
+        color: #F18119;
+      }
+      #add-recipe input {
+        display: block;
+        margin: 20px 0;
+        margin-left: 10px;;
+        padding: 10px;
+        border: 1px solid #04020ef3;
+        font-size: 16px;
+        border-radius: 4px 0 0 4px;
+        box-sizing: border-box;
+        width: 200px;
+        float: left;
+        clear: both;
+      }
+      
+      #add-recipe button {
+        border: 1px solid gold;
+        background-color: #04020ef3;
+        padding: 10px 20px;
+        font-size: 16px;
+        display: inline-block;
+        margin: 0;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        width: 100px;
+        float: left;
+        margin: 20px 0;
+        border-left: 0;
+        color: white;
+      }
+      
+      #add-recipe:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      
+      #add-recipe #hide {
+        width: 30px;
+      }
+      
+      #add-recipe label {
+        line-height: 52px;
+      }
+      
+      #tabbed-content li {
+        display: inline-block;
+        padding: 10px 14px;
+       
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+        background-color: #04020ef3;
+        color: white;
+      }
+      
+      #tabbed-content .panel {
+        display: none;
+        border: 1px solid gold;
+        padding: 0 10px;
+        border-radius: 4px;
+        background-color: #04020ef3;
+        color: white;
+      }
+      
+      #tabbed-content .panel.active {
+        display: block;
+      }
 
 /* =================
    Intro section 
@@ -736,7 +902,7 @@ main{
         
     }
 
-    ul{
+    ol{
         flex-direction: row;
         border: none;
         justify-content: center;
@@ -765,7 +931,7 @@ main{
 
 @media (max-width: 675px) {
   
-    nav ul {
+    nav ol {
         flex-direction: column;
     }
     
@@ -802,7 +968,7 @@ main{
 
 
 
-form{
+.order-form{
     margin: 0 auto;
     height: 450px;
     padding-top: 2em;
@@ -886,6 +1052,8 @@ font-size: 1rem;
     max-width: 42.5em;
     margin: 0 auto;
 }
+
+
 
 @media (min-width:776px){
     .ceo-picture{
