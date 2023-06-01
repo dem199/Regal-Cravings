@@ -939,6 +939,10 @@ main{
         margin: .5em 0;
     }
 
+    nav a{
+        color: #FFFFFF;
+    }
+
 
     main .outer-container{
         margin: 0 auto;
