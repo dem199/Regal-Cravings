@@ -199,7 +199,7 @@ export const menuArray = [
         ingredients: ["rice", "egg", "beef"],
         price: 2000,
         emoji: "IMG_E7013.JPG",
-        id: 26
+        id: 27
     }
         
 ]
