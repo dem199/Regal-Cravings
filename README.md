@@ -5,26 +5,25 @@ The app is designed to satisfy your cravings with just a few taps. Whether you'r
 
 ## Features
 
-1. ### Home Page:
+- ### Easy Ordering Process:
 
-- Upon loading the app, a modal pops up after a few seconds.
-- The modal contains a form to collect user details, specifically the user's name and phone number.
-- If the user fails to fill out the form, the modal prevents them from using the app further.
-- The close button of the modal is not clickable.
-- Additionally, the home page includes a section to add and delete food items from the DOM (Document Object Model).
+Browse through a variety of restaurants and their menus, select your desired items, customize them according to your preferences, and place your order hassle-free.
 
-2. ### Order Page:
+- ### Secure Payments:
 
-- The Order page displays a variety of food options along with their prices and ingredients.
-- Users can select multiple food items, and the app calculates the total price based on the items chosen.
-- Users can also remove food items if they change their minds.
-- After completing the order, a modal pops up requesting the user's card details for payment.
-- Upon clicking the "Pay" button, a message is displayed to the user, informing them that the order is on its way. The message also includes the user's name.
+Enjoy peace of mind with secure and encrypted payment options. The app integrates with trusted payment gateways, ensuring that your personal and financial information remains safe and confidential.
 
-3. ### About Us Page:
+- ### Real-Time Order Tracking:
 
-- The About Us page provides details about the restaurant, such as its history, mission, and values.
-- It also includes information about the chef, including their bio and a picture.
+Stay updated on the status of your order with real-time tracking. Know exactly when your food is being prepared, out for delivery, or ready for pickup, so you can plan accordingly.
+
+- ### Favorites and Order History:
+
+Save your favorite restaurants and dishes for quick access in the future. Additionally, easily revisit your order history to reorder your favorite meals or track previous orders.
+
+- ### Personalized Recommendations:
+
+Discover new restaurants and dishes based on your preferences and previous orders. The app uses advanced algorithms to offer personalized recommendations that suit your taste.
 
 # Getting Started
 
