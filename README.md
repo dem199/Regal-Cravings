@@ -53,8 +53,8 @@ npm start
 
 ```
 
-# Contributing
+## Contributing
 
 Contributions to the Food Ordering App are welcome! If you have any suggestions, bug fixes, or additional features you'd like to see, feel free to open an issue or submit a pull request.
 
-We hope you enjoy using the Food Ordering App and have a delightful dining experience, right from the comfort of your own home!
+I hope you enjoy using the Food Ordering App and have a delightful dining experience, right from the comfort of your own home!
