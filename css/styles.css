@@ -2,24 +2,16 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif; 
     font-size: 1rem;
     color: #404040;
-    text-align: center;
-    
+    text-align: center; 
 }
 
-
-
 header {
-    background: #c8e3e74b;
-  
-   
-   
+    background: #c8e3e74b;   
 }
 
 .container-two{
@@ -44,8 +36,6 @@ header {
     height: 50px;
     align-self: flex-start;
 }
-
-
 
 nav {
     position: fixed;
@@ -582,16 +572,9 @@ input{
     height: 250px;
 }
 
-
-
-
-
- 
 /* =================
    local page 
    ================= */
-
-  
    .header{
     height: 167px;
     
@@ -625,10 +608,7 @@ font-size: 39px;
    
    }
 
-
 .inner-container{
-   
- 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -656,14 +636,9 @@ font-size: 39px;
     margin-left: 0.5em;
 }
 
-
-
 .fa-light{
     font-weight: 400;
-
-   
     font-size: 2.5rem;
-    
     color: #3C3C3C;
     text-align: center;
     border-color: #DEDEDE;
@@ -676,11 +651,7 @@ font-size: 39px;
 }
 
 .container{
-    
-    justify-content: space-between;
-    
-    
-   
+    justify-content: space-between;  
 }
 
 .food-container{
@@ -698,8 +669,6 @@ font-size: 39px;
     border: 1px solid #3C3C3C;
     
 }
-
-
 
 .order-header{
     text-align: center;
@@ -731,7 +700,6 @@ margin-bottom: 1.5em;
     line-height: 17px;
     color: #000000;
 }
-
 
 .item-price{   
     font-size: 1.25rem;
@@ -770,8 +738,6 @@ margin-bottom: 1.5em;
     color: #0E0E0E; 
 }
 
-
-
 .complete-btn{
 width: 508px;
 height: 60px;
@@ -798,13 +764,10 @@ cursor: pointer;
     width: 508px;
     height: 548.24px;
     align-items: center;
-    
     text-align: center;
     border-radius: 3.88991px;
     padding-top: 2em;
-    background: #FFFFFF;
-
-    
+    background: #FFFFFF;  
 }
 
 .form-header{
@@ -815,7 +778,6 @@ text-align: center;
 }
 
 input{
-
 height: 71.3px;
 border: 1.3px light #757575;
 font-weight: 400;
@@ -869,8 +831,6 @@ main{
         display: flex;
     }
 
-    
-    
     h2,
     h1 + p {
         font-size: 1.75rem;
@@ -898,8 +858,7 @@ main{
     
     .nav {
         position: initial;
-        background-color: #c8e3e74b;
-        
+        background-color: #c8e3e74b;  
     }
 
     ol{
@@ -918,12 +877,8 @@ main{
     }
 
     .open-nav {
-    
-        
         padding: .5em;
-       
-        font-size: 1.5em;
-        
+        font-size: 1.5em; 
     }
     
     
@@ -960,18 +915,11 @@ main{
         width: 100%;
         background-size: cover;
         background-position: center;
-    }
-
-    
-    
+    } 
 
 .complete-btn{
     width: 100%;
-   
 }
-
-
-
 .order-form{
     margin: 0 auto;
     height: 450px;
@@ -980,8 +928,6 @@ main{
 
 .order-form, .order-form input, .order-form .pay{
     width: 90%;
-    
-  
 }
 
 .food, .order-header, .item-name, .total-price, .form-header{
@@ -1002,11 +948,8 @@ font-size: 1rem;
 
  .pending-message{
     font-size: 20px;
-    width: 100%;
-    
-}
-
-    
+    width: 100%;   
+}   
    
 }
 
@@ -1033,23 +976,20 @@ font-size: 1rem;
     justify-content: center;
   align-items: center;
   gap: 10px;
-  
   width: 100%;
   padding-top: 3%;
     
 }
 
-.ceo-picture{
-   
-    
+.ceo-picture{  
     margin-bottom: 10px;
-  
-  object-fit: cover;
- 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(4, 4, 36);
+    border-radius: 10px;
 }
 
 .my-content{
@@ -1069,15 +1009,12 @@ font-size: 1rem;
     
    .ceo{
     flex-direction: column;
-    
-
    } 
 
    .ceo-picture{
     max-width: 100%;
    }
   
-
    .section{
     padding-left: 10px;
     padding-right: 10px;
@@ -1105,14 +1042,12 @@ font-size: 1rem;
     .ceo{
         flex-direction: column;
         max-width: 100%;
-    
- 
     } 
 
-   
     .section{
         padding-left: 10px;
         padding-right: 10px;
         margin: 0 auto;
        }
  }
+
