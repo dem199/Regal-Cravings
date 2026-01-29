@@ -1,60 +1,73 @@
-# Regal Cravings
+# React + TypeScript + Vite
 
-The Food Ordering App is a convenient and user-friendly platform that allows customers to order food from their favorite restaurants with ease. With its intuitive interface, secure payment options, and a wide selection of delicious dishes, the app offers a seamless dining experience right at your fingertips.
-The app is designed to satisfy your cravings with just a few taps. Whether you're seeking a quick bite or planning a lavish feast, it makes it effortless to explore a world of culinary delights and have them delivered right to your doorstep.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- ### Easy Ordering Process:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Browse through a variety of restaurants and their menus, select your desired items, customize them according to your preferences, and place your order hassle-free.
+## React Compiler
 
-- ### Secure Payments:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Enjoy peace of mind with secure and encrypted payment options. The app integrates with trusted payment gateways, ensuring that your personal and financial information remains safe and confidential.
+## Expanding the ESLint configuration
 
-- ### Real-Time Order Tracking:
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-Stay updated on the status of your order with real-time tracking. Know exactly when your food is being prepared, out for delivery, or ready for pickup, so you can plan accordingly.
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-- ### Favorites and Order History:
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-Save your favorite restaurants and dishes for quick access in the future. Additionally, easily revisit your order history to reorder your favorite meals or track previous orders.
-
-- ### Personalized Recommendations:
-
-Discover new restaurants and dishes based on your preferences and previous orders. The app uses advanced algorithms to offer personalized recommendations that suit your taste.
-
-# Getting Started
-
-To get started with the Food Ordering App, follow these steps:
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/dem199/Regal-Cravings
-
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
 
-2. Install the required dependencies:
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```bash
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-cd Regal Cravings
-npm install
-
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
-
-3. Launch the app locally:
-
-```sql
-
-npm start
-
-```
-
-## Contributing
-
-Contributions to the Food Ordering App are welcome! If you have any suggestions, bug fixes, or additional features you'd like to see, feel free to open an issue or submit a pull request.
-
-I hope you enjoy using the Food Ordering App and have a delightful dining experience, right from the comfort of your own home!
