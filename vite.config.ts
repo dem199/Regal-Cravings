@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Regal-Cravings/',
+  base: process.env.NODE_ENV === 'production' ? '/Regal-Cravings/' : '/',
   server: {
     port: 3000,
     open: true
@@ -13,5 +13,4 @@ export default defineConfig({
     sourcemap: true
   }
 })
-
 
