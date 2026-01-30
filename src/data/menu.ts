@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 import type { FoodItem } from '../types';
 
 export const menuArray: FoodItem[] = [
