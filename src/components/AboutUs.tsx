@@ -111,21 +111,21 @@ export const AboutUs = () => {
             <div className="flex items-start gap-4">
               <MapPin className="text-orange-500 flex-shrink-0 mt-1" size={20} />
               <div>
-                <p className="text-slate-300 font-medium">Lekki Phase 1, Lagos, Nigeria</p>
-                <p className="text-slate-400 text-sm mt-1">Behind Landmark Centre</p>
+                <p className="text-slate-300 font-medium">Ishaga Fagba, Balogun Bus-stop</p>
+                <p className="text-slate-400 text-sm mt-1">Lagos Nigeria</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Clock className="text-orange-500 flex-shrink-0" size={20} />
-              <span className="text-slate-300 font-medium">Open Daily: 08:00 AM - 10:00 PM</span>
+              <span className="text-slate-300 font-medium">Open Daily: 08:00 AM - 6:00 PM</span>
             </div>
             <div className="flex items-center gap-4">
               <Phone className="text-orange-500 flex-shrink-0" size={20} />
-              <span className="text-slate-300 font-medium">+234 (0) 802 345 6789</span>
+              <span className="text-slate-300 font-medium">+234 (0) 8163449140</span>
             </div>
             <div className="flex items-center gap-4">
               <Mail className="text-orange-500 flex-shrink-0" size={20} />
-              <span className="text-slate-300 font-medium">hello@regalcravings.ng</span>
+              <span className="text-slate-300 font-medium">regalcravings@gmail.com</span>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ export const AboutUs = () => {
         className="mt-20 text-center"
       >
         <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">
-          &copy; 2026 Regal Cravings | Developed by Opeyemi Olatunbosun
+          &copy; 2026 Regal Cravings | Developed by Optimistic
         </p>
       </motion.footer>
     </motion.main>

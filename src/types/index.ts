@@ -1,7 +1,5 @@
 
 
-
-
 // Core application types
 export interface FoodItem {
   id: number;
