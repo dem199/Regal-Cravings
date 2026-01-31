@@ -17,7 +17,7 @@ export const CheckoutModal = ({
   const config = {
     reference: (new Date()).getTime().toString(),
     email: userEmail,
-    amount: total * 100, // Paystack expects amount in kobo
+    amount: total * 100, // 
     publicKey: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY || '', 
   };
 

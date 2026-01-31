@@ -48,7 +48,7 @@ export const AboutUs = () => {
           THE ART OF <span className="text-orange-600 underline decoration-4">CRAVING</span>
         </h1>
         <p className="text-lg text-slate-500 leading-relaxed font-medium max-w-2xl mx-auto">
-          At Regal Cravings, we believe food isn't just fuel—it's an experience, 
+          At Regal Cravings, we believe food isn't just fuel, it's an experience, 
           a celebration, and a journey. Founded in the heart of Lagos, our mission 
           is to bring the luxury of a 5-star kitchen to the comfort of your home.
         </p>
