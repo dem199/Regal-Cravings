@@ -101,7 +101,8 @@ export const CartSidebar = ({
                       className="flex gap-4 items-center border-b border-slate-50 pb-4 last:border-b-0"
                     >
                       <img 
-                        src={`/images/${item.image}`} 
+                        
+                         src={`${import.meta.env.BASE_URL}${item.image}`} 
                         alt={item.name} 
                         className="w-16 h-16 rounded-xl object-cover bg-slate-50 flex-shrink-0"
                       />
