@@ -51,7 +51,7 @@ export const MenuCard = ({
       {/* Food Image */}
       <div className="relative overflow-hidden rounded-2xl flex-shrink-0">
         <motion.img 
-          src={`/images/${item.image}`} 
+          src={`${import.meta.env.BASE_URL}${item.image}`} 
           className="w-24 h-24 md:w-28 md:h-28 object-cover bg-slate-50" 
           alt={item.name}
           whileHover={{ scale: 1.1 }}
